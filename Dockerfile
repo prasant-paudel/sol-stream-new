@@ -56,4 +56,6 @@ RUN apt install -y libpq-dev libsqlite3-dev libmysqlclient-dev
 
 RUN cargo install diesel_cli
 
+RUN solana config set --keypair /code/keypair.json --url https://api.devnet.solana.com
+
 WORKDIR /code
